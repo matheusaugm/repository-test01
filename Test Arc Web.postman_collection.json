@@ -1,0 +1,119 @@
+{
+	"info": {
+		"_postman_id": "839b7053-f2cf-4a1b-b7d1-67e71465da13",
+		"name": "Test Arc Web",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "15971425"
+	},
+	"item": [
+		{
+			"name": "location",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "location find one",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "location update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/updatelocation/:id",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"updatelocation",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "new location",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Novo Hotel Exemplo\",\r\n    \"location\": [\r\n        26.1234,\r\n        56.5678\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/newlocation",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"newlocation"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete location",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Novo Hotel Exemplo\",\r\n    \"location\": [\r\n        26.1234,\r\n        56.5678\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/newlocation",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"newlocation"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
